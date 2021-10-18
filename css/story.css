@@ -1,0 +1,240 @@
+.story {
+    margin: auto;
+}
+.story-content {
+    width: 70%;
+    text-align: left;
+}
+.heading {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 59px;;
+}
+.story-text {
+}
+.text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+.story-box {
+    display: flex;
+    margin: 50px 0;
+    justify-content: space-between;
+}
+.box-back {
+    position: relative;
+    height: 622px;
+    width: 49%;
+    background-image: url(../img/Rectangle\ 2men.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.back-botton {
+    display: flex;
+    position: relative;
+    top: 70%;
+    width: 100%;
+    height: 30%;
+    background-color: #00000080;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+}
+.back-text {
+    color: #fff;
+    width: 50%;
+}
+.story-btn {
+    padding: 20px;
+    border: #FF9900 solid 3px;
+    background: none;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    width: 150px;
+    color: #fff;
+}
+.box-card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+    height: 285px;
+    border: 1px solid #cacaca ;
+}
+
+.img-cube {
+    background-image: url(../img/Frame\ 16cube.svg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    width: 21%;
+    height: 175px;
+}
+.card-content {
+    width: 68%;
+
+}
+.title {
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+
+
+}
+.text-b {
+}
+.card-text {
+}
+.card-b {
+}
+.img-gear {
+    background-image: url(../img/Frame\ 12gear.svg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    width: 21%;
+    height: 175px;
+}
+
+@media (max-width: 1240px) {
+    .story-box {
+        flex-direction: column;
+    }
+    .card {
+        margin-top: 32px;
+    }
+    .story-content {
+        width: 100%;
+    }
+    .box-card {
+        width: 100%;
+    }
+    .box-back {
+        width: 100%;
+        background-position: center;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .story-box {
+        margin: 0;
+    }
+    .box-back {
+        height: 390px;
+        background-size: cover;
+        margin-bottom: 145px;
+    }
+    .back-botton {
+        flex-direction: column;
+        align-items: flex-start;
+        top: 105%;
+        background: none;
+    }
+    .story-btn {
+        color: #333;
+        font-size: 14px;
+        width: 50%;
+    }
+    .back-text { 
+        color: #333;
+        width: 100%;
+        font-size: 14px;
+    }
+    .card {
+        flex-direction: column;
+        align-items: flex-start;
+        border: none;
+    }
+    .card-content {
+        width: 100%;
+    }
+    .title {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .card-text {
+        font-size: 12px;
+    }
+    .img-gear {
+        background-position-y: 0;
+
+    }
+    .img-cube {
+        background-position-y: 40px;
+    }
+
+}
+@media (max-width: 325px) {
+    .story-text {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .box-back {
+        background-image: url(../img/men-320.png);
+        background-size: contain;
+        height: 200px;
+        margin-bottom: 230px;
+    }
+    .back-botton {
+        top: 140%;
+    }
+    .story-btn {
+        width: 60%;
+        padding: 8px;
+    }
+    .card {
+        margin: 0;
+    }
+    .img-cube {
+        position: relative;
+        width: 45px;
+        height: 45px;
+        background-image: none;
+        background-color: #FF9900;
+        border-radius: 50px;
+    }
+    .img-cube::before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        left: 25px;
+        width: 45px;
+        height: 50px;
+        background-image: url(../img/packagecube-mobil.svg);
+        background-repeat: no-repeat;
+    }
+    .img-gear {
+        position: relative;
+        width: 45px;
+        height: 45px;
+        background-image: none;
+        background-color: #FF9900;
+        border-radius: 50px;
+    }
+    .img-gear:before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: 25px;
+        width: 45px;
+        height: 50px;
+        background-image: url(../img/settingsruffff.svg);
+        background-repeat: no-repeat;
+    }
+}

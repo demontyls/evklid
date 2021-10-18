@@ -1,0 +1,143 @@
+.work {
+}
+.work-heading {
+}
+.heading {
+}
+.work-list {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    padding: 0;
+}
+.li-namb {
+    list-style: none;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+}
+.li-namb:hover {
+    color: #FF9900;
+}
+.work-box {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+}
+.box-content {
+    width: 45%;
+    direction: ltr;
+}
+.work-text {
+    margin: 0;
+}
+.box-btn {
+    margin-top: 100px;
+}
+.btn-more {
+    height: 60px;
+    width: 170px;
+    font-family: Montserrat;
+    font-size: 16px;
+    border: 1px solid #FF9900;
+
+}
+.contract {
+    border: 1px solid #333;
+    background: none;
+    height: 60px;
+    width: 140px;
+    font-family: Montserrat;
+    font-size: 16px;
+    margin-left: 3%;
+}
+.box-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+.img-consultation {
+    background-image: url(../img/Rectangle\ 18work.jpg);
+}
+.img-estimate {
+    background-image: url(../img/Rectangle\ 18111.jpg);
+}
+.img-contractor {
+    background-image: url(../img/Rectangle\ 19222.jpg);
+}
+.img-inspector {
+    background-image: url(../img/Rectangle\ 20333.jpg);
+}
+/* табы */
+.li-namb.active {
+    color: #FF9900;
+}
+.work-box{
+    display: none;
+}
+.work-box.active {
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+}
+@media (max-width:1024px) {
+    .work-list {
+        width: 50%;
+    }
+    .img-consultation{
+        background-image: url(../img/work-1024.jpg);
+    }
+
+}
+@media (max-width:860px) {
+    .work-box {
+        flex-direction: column;
+    } 
+    .box-img {
+        width: 100%;
+        padding: 28% 0;
+    }
+    .box-content {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .work-list {
+        width: 100%;
+    }
+    .box-btn {
+        margin-top: 40px;
+    }
+}
+@media (max-width:480px) {
+    .li-namb {
+        font-size: 14px;
+    }
+    .work-box {
+        margin-top: 0;
+    }
+    .work-text {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .work-heading {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .box-btn {
+        margin-top: 10px;
+        display: flex;
+    }
+    .btn-more {
+        width: 160px;
+        font-size: 12px;
+    }
+    .contract {
+        width: 120px;
+        font-size: 12px;
+    }
+
+}

@@ -1,0 +1,100 @@
+.questions {
+    margin-top: 100px;
+    border-bottom: solid 1px #cacaca;
+}
+.acc-card {
+    display: flex;
+    padding: 40px 0;
+    border-top: solid 1px #cacaca;
+}
+.acc-box {
+    max-width: 1000px;
+    height: 30%!important;
+}
+.acc-btn {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    border-radius: 50px;
+    border: none;   
+}
+.acc-btn::after {
+    border-radius: 15px;
+    position: absolute;
+    left: 10px;
+    content: '';
+    width: 30px;
+    height: 1px;
+    background-color: #666 ;
+}
+.acc-btn::before {
+    border-radius: 15px;
+    position: absolute;
+    left: 10px;
+    content: '';
+    width: 30px;
+    height: 1px;
+    background-color: #666 ;
+    transform: rotateZ(90deg);
+}
+.acc-content {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+}
+.ui-state-active .acc-btn {
+    /* transform: rotateZ(45deg); */
+}
+@media (max-width:1024px) {
+    .acc-text {
+        width: 90%;
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .acc-content {
+        font-size: 15px;
+        line-height: 28px;
+    }
+}
+@media (max-width:640px) {
+    .acc-text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .acc-content {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+@media (max-width:480px) {
+    .acc-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .acc-btn {
+        width: 30px;
+        height: 30px;
+    }
+    .acc-btn::after {
+        left: 6px;
+        width: 18px;
+
+    }
+    .acc-btn::before {
+        left: 6px;
+        width: 18px;
+
+    }
+    .acc-content {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
